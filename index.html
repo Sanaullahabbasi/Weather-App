@@ -17,11 +17,43 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <!-- Font Awesome Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Animate style link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
   </head>
 
   <body>
-    <div id="container d-flex justify-content-center align-items-center"></div>
+    <div
+      id="container"
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div id="header" class="d-flex justify-content-center align-items-center">
+        <div>
+          <input type="text" name="" id="input" placeholder="search city" />
+          <i class="fa-brands fa-searchengin"></i>
+        </div>
+      </div>
+      <div id="info-sec">
+        <div id="temp">
+          
+        </div>
+      </div>
+    </div>
 
+
+<!-- Sweet Alert Script -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Main Java Script file -->
     <script src="app.js"></script>
   </body>
 </html>
