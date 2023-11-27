@@ -12,7 +12,7 @@ document.querySelector(".fa-searchengin").addEventListener("click", ()=>{
         });
         weatherData
         .then((data) => {
-document.getElementById("temp").innerHTML = `<p>Temperature</p> ${data.main.temp} °C`
+document.getElementById("temp").innerHTML = `<h5>Temperature</h5><i class="fa-solid fa-temperature-three-quarters"></i> <h2> ${data.main.temp} °C </h2>`
             console.log(data.main.temp)
         })
     }

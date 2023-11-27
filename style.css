@@ -30,7 +30,7 @@ body{
     border-bottom: 1px solid black;
     color: blue;
 }
-.fa-searchengin{
+.fa-searchengin, .fa-temperature-three-quarters{
     color: blue;
     font-size: 30px;
     font-weight: bold;
