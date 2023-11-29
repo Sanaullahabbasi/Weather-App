@@ -70,6 +70,7 @@ body {
 ::placeholder {
     color: blue;
     opacity: 0.8; /* Firefox */
+    font-size: 20px;
   }
   
   ::-ms-input-placeholder { /* Edge 12 -18 */
@@ -126,7 +127,7 @@ font-style: italic;
   bottom: 10px;
   right: 25%;
   font-size: 32px;
-  margin: 10%;
+  text-align: center;
 }
 #Weather_icon > img {
   margin-top: 20px;

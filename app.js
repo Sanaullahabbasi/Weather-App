@@ -33,10 +33,22 @@ document.querySelector(".fa-searchengin").addEventListener("click", () => {
       document.getElementById("wind").innerHTML = `<h5>Wind</h5><img src="assests/images/wind.png" class="set" alt=""><h2> ${Math.round(data.wind.speed)}</h2>`;
       document.getElementById("Feel_like").innerHTML = `<h5>Feel Like</h5><img src="assests/images/feel_like.png" class="set" alt=""><h2> ${Math.round(data.main.feels_like)} °C </h2>`;
       document.getElementById("visibility").innerHTML = `<h5>Visibility</h5><img src="assests/images/visibility.png" class="set" alt=""><h2> ${Math.round(data.visibility) / 1000} km</h2>`;
-      document.getElementById("Weather_icon").innerHTML = ` <img width="200px" src="assests/images/weatherIcon.png" alt="weatherIcon"><div>${data.weather[0].main}</div>`
       document.getElementById("info_temp").innerHTML = `<h1>${Math.round(data.main.temp)} °C</h1>`;
       document.getElementById("info_loc").innerHTML = `<h4>${input.value}</h4>`;
       console.log(data);
+      document.getElementById("cross").style.display ="inline";
+      if(data.weather[0].main = "Clouds"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/clouds.png" alt="Clouds"><div>${data.weather[0].main}</div>`
+      }else if(data.weather[0].main === "Clear"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/clear.png" alt="Clear"><div>${data.weather[0].main}</div>`
+      }else if(data.weather[0].main === "Storm"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/storm.png" alt="Storm"><div>${data.weather[0].main}</div>`
+      }else if(data.weather[0].main === "Snow"){
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/snow.png" alt="Snow"><div>${data.weather[0].main}</div>`
+      }else{
+        document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/weatherIcon.png" alt="weatherIcon"><div>${data.weather[0].main}</div>`
+
+      }
     })
     .catch((err)=>{
     if(err){
