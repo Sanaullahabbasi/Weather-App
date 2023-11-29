@@ -1,13 +1,13 @@
 @font-face {
-    font-family: "Poppins";
-    src: url(assests/fonts/Poppins-Medium.ttf);
+  font-family: "Poppins";
+  src: url(assests/fonts/Poppins-Medium.ttf);
 }
 @font-face {
-    font-family: "BlackOpsOne";
-    src: url(assests/fonts/BlackOpsOne-Regular.ttf);
+  font-family: "BlackOpsOne";
+  src: url(assests/fonts/BlackOpsOne-Regular.ttf);
 }
-*{
-    font-family: "Poppins";
+* {
+  font-family: "Poppins";
 }
 
 body {
@@ -19,7 +19,9 @@ body {
 }
 
 #container {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;  width: 700px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  width: 700px;
   height: 70vh;
   border-radius: 10px;
 }
@@ -68,14 +70,15 @@ body {
   outline: none;
 }
 ::placeholder {
-    color: blue;
-    opacity: 0.8; /* Firefox */
-    font-size: 20px;
-  }
-  
-  ::-ms-input-placeholder { /* Edge 12 -18 */
-    color: blue
-  }
+  color: blue;
+  opacity: 0.8; /* Firefox */
+  font-size: 20px;
+}
+
+::-ms-input-placeholder {
+  /* Edge 12 -18 */
+  color: blue;
+}
 .fa-searchengin,
 .fa-temperature-three-quarters {
   color: blue;
@@ -105,17 +108,17 @@ body {
 #wind > h2,
 #Feel_like > h2,
 #visibility > h2 {
-position: absolute;
-right: 5%;
-font-family: "BlackOpsOne";
-font-style: italic;
+  position: absolute;
+  right: 5%;
+  font-family: "BlackOpsOne";
+  font-style: italic;
 }
 /* adujsting the icons of weather information */
-.set{
-    position: absolute;
-    right: 40%;
-    height: 40px;
-    top: -11px;
+.set {
+  position: absolute;
+  right: 40%;
+  height: 40px;
+  top: -11px;
 }
 #info_temp > h1 {
   bottom: 60px;
@@ -136,4 +139,37 @@ font-style: italic;
 }
 #Weather_icon div {
   text-align: center;
+}
+
+@media only screen and (max-width: 425px) {
+  #container {
+    width: 100%;
+    padding: 2px;
+  }
+  #input {
+    width: 70%;
+    font-size: 20px;
+  }
+  .fa-searchengi {
+    font-size: 20px;
+  }
+  #info {
+    width: 20%;
+  }
+  #Weather_icon img {
+    width: 90px !important;
+  }
+  #info_temp > h1 {
+    font-size: 24px;
+  }
+  #info_loc > h4 {
+    font-size: 18px;
+    color: blue;
+  }
+  #info-sec h5, #info-sec h2 {
+    font-size: 16px;
+  }
+  .set {
+    height: 30px;
+  }
 }
