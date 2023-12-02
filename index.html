@@ -33,11 +33,12 @@
     <!-- manifest link -->
     <link rel="manifest" href="manifest.json">
     <!-- service worker installer -->
-    <script>
-      if (typeof navigator.serviceWorker !== 'undefined') {
-        navigator.serviceWorker.register('sw.js')
+    <!-- <script>
+      //if browser support service worker
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
       }
-    </script>
+    </script> -->
     
   </head>
 
@@ -49,8 +50,7 @@
       <div id="header" class="d-flex justify-content-center align-items-center">
         <div>
           <input type="search" name="" id="input" placeholder="search city" />
-          <i class="fa-solid fa-xmark" id="cross" style="display: none;"></i>
-          <i class="fa-brands fa-searchengin"></i>
+         <i class="fa-brands fa-searchengin"></i>
         </div>
       </div>
       <div id="info-sec">

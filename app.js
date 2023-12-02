@@ -36,7 +36,6 @@ document.querySelector(".fa-searchengin").addEventListener("click", () => {
       document.getElementById("info_temp").innerHTML = `<h1>${Math.round(data.main.temp)} °C</h1>`;
       document.getElementById("info_loc").innerHTML = `<h4>${input.value}</h4>`;
       console.log(data);
-      document.getElementById("cross").style.display ="inline";
       if(data.weather[0].main = "Clouds"){
         document.getElementById("Weather_icon").innerHTML = ` <img width="170px" src="assests/images/clouds.png" alt="Clouds"><div>${data.weather[0].main}</div>`
       }else if(data.weather[0].main === "Clear"){
@@ -71,15 +70,14 @@ document.querySelector(".fa-searchengin").addEventListener("click", () => {
           });
     }
     })
-
-   
-
-
-
 }
 });
 
-
-document.getElementById("cross").addEventListener("click", ()=>{
-    document.getElementById("input").value = "";
-})
+if ("serviceWorker" in navigator) {
+  window.addEventListener("load", function() {
+    navigator.serviceWorker
+      .register("/sw.js")
+      .then(res => console.log("service worker registered"))
+      .catch(err => console.log("service worker not registered", err))
+  })
+}
