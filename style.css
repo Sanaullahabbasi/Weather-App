@@ -27,6 +27,7 @@ body {
   width: 700px;
   height: 70vh;
   border-radius: 10px;
+  backdrop-filter: blur(30px);
 }
 #header {
   width: 100%;
@@ -66,11 +67,12 @@ body {
   width: 500px;
   height: 40px;
   border: none;
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   color: blue;
   font-size: 30px;
   position: relative;
   outline: none;
+  background-color: transparent;
 }
 ::placeholder {
   color: blue;
