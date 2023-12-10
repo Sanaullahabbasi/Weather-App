@@ -16,6 +16,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url(assests/images/background-imagejpg.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 #container {
