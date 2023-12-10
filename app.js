@@ -6,6 +6,7 @@ document.querySelector(".fa-searchengin").addEventListener("click", () => {
 
   const weatherAPI = `https://api.openweathermap.org/data/2.5/weather?&appid=0ae49f1a5bcf107f8c42a6f4d510f21e&units=metric&q=${input.value}`;
   if (input.value.trim() === "") {
+    container.style.display = "none";
     Swal.fire({
         title: `Please enter a city name`,
         showClass: {
@@ -56,6 +57,7 @@ document.querySelector(".fa-searchengin").addEventListener("click", () => {
       }
     })
     .catch((err)=>{
+    container.style.display = "none";
     if(err){
         Swal.fire({
             title: `Please enter a valid city name`,
