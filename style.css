@@ -73,6 +73,7 @@ body {
   position: relative;
   outline: none;
   background-color: transparent;
+  padding-left: 20px;
 }
 ::placeholder {
   color: blue;
@@ -84,13 +85,26 @@ body {
   /* Edge 12 -18 */
   color: blue;
 }
-.fa-searchengin,
+
 .fa-temperature-three-quarters {
   color: blue;
   font-size: 30px;
   font-weight: bold;
   padding-left: 20px;
   cursor: pointer;
+}
+.fa-searchengin{
+  color: orange;
+  font-size: 36px;
+  font-weight: bold;
+  padding-left: 20px;
+  cursor: pointer;
+}
+.fa-location-dot{
+  color: red;
+  font-size: 30px;
+  font-weight: bold;
+  padding-right: 10px;
 }
 .fa-xmark {
   color: blue;
@@ -145,7 +159,6 @@ body {
 #Weather_icon div {
   text-align: center;
 }
-
 @media only screen and (max-width: 425px) {
   #container {
     width: 100%;
