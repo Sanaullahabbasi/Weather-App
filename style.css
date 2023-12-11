@@ -169,6 +169,9 @@ body {
   text-align: center;
 }
 @media only screen and (max-width: 425px) {
+  body{
+    overflow: hidden;
+  }
   #container {
     width: 100%;
     padding: 2px;
@@ -203,6 +206,7 @@ body {
   }
   .set {
     height: 30px;
+    top: -3px
   }
   .fa-location-dot{
     padding: 0;
